@@ -8,9 +8,9 @@ Prerequisites:
 - `brew install grep`
 - `brew install sed`
 
-## Download video
+## 1. Download video
 
-With dutch subtitles embedded, if present.
+With dutch subtitles embedded in the file, if present.
 
 ```sh
 ./download_video.sh <url>
@@ -22,7 +22,10 @@ Example:
 ./download_video.sh https://www.youtube.com/watch?v=Zh3Yz3PiXZw
 ```
 
-## Burn embedded subtitles into video
+## 2. Burn embedded subtitles into video
+
+This burns the embedded subtitles into the video itself. Supply a video that has
+embedded subtitles, like the video from step 1
 
 ```sh
 ./burn_subtitles.sh <video file>
@@ -43,5 +46,5 @@ cp -ai 'Reality Video Download.workflow' ~/Library/Services
 ```
 
 Go to youtube video in Safari, right click url, choose Services from context
-menu, next choose Reality Video Download.  The video will appear in the
+menu, next choose Reality Video Download. The video will appear in the
 Downloads folder.
